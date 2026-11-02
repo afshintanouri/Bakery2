@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Small-batch organic sourdough, baked to order and delivered across the Adelaide foothills.">
+  <meta name="theme-color" content="#243829">
+  <title>Foothills Ferment | Organic sourdough delivered</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,650&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#order">Skip to order form</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Foothills Ferment home">
+      <span class="brand-mark" aria-hidden="true">F</span><span>Foothills Ferment</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#bread">Bread</a><a href="#how">How it works</a><a href="#delivery">Delivery</a>
+      <a class="nav-cta" href="#order">Order now</a>
+    </nav>
+    <button class="menu-button" type="button" aria-expanded="false" aria-label="Open menu">Menu</button>
+  </header>
+
+  <main id="top">
+    <section class="hero section-pad">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Organic • slow fermented • Adelaide foothills</p>
+        <h1>Bread with time,<br><em>place and purpose.</em></h1>
+        <p class="lead">Small-batch sourdough made from certified organic flour, water, salt and a lively local starter. Baked to order, then delivered to your door.</p>
+        <div class="hero-actions"><a class="button" href="#order">Build your loaf</a><a class="text-link" href="#bread">See this week’s bread →</a></div>
+        <ul class="trust-list" aria-label="Product benefits"><li>48-hour ferment</li><li>Zero additives</li><li>Plastic-light packaging</li></ul>
+      </div>
+      <div class="hero-art reveal" aria-label="Stylised sourdough loaf and native leaves">
+        <div class="sun"></div><div class="leaf leaf-a"></div><div class="leaf leaf-b"></div>
+        <div class="loaf"><span></span><span></span><span></span></div>
+        <div class="hero-note">Baked in tiny batches<br><strong>for better bread</strong></div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Bakery values"><div>WILD FERMENTATION ✦ ORGANIC GRAINS ✦ LOCAL DELIVERY ✦ BAKED TO ORDER ✦</div></section>
+
+    <section id="bread" class="section-pad products">
+      <div class="section-heading"><div><p class="eyebrow">The weekly bake</p><h2>Choose your character</h2></div><p>Every loaf starts with organic flour and our mature sourdough culture. Pick a style, then make it yours.</p></div>
+      <div class="product-grid">
+        <article class="product-card"><div class="bread-icon classic"><i></i></div><p class="tag">Crowd favourite</p><h3>Country loaf</h3><p>Open crumb, caramelised crust and a balanced tang. The everyday loaf that goes with everything.</p><button class="choose" data-bread="Country loaf">Choose country</button></article>
+        <article class="product-card featured"><div class="bread-icon seed"><i></i></div><p class="tag">Deep & nutty</p><h3>Heritage grain</h3><p>Wholegrain character with a moist crumb. Especially good with soup, cheese and slow Sunday breakfasts.</p><button class="choose" data-bread="Heritage grain">Choose heritage</button></article>
+        <article class="product-card"><div class="bread-icon tin"><i></i></div><p class="tag">Soft & sliceable</p><h3>Sandwich tin</h3><p>A tender, practical loaf with sourdough flavour. Neat slices for toast, lunches and little hands.</p><button class="choose" data-bread="Sandwich tin">Choose sandwich</button></article>
+      </div>
+    </section>
+
+    <section id="how" class="how section-pad">
+      <div><p class="eyebrow">From starter to doorstep</p><h2>Made slowly.<br>Ordered simply.</h2></div>
+      <ol class="steps"><li><span>01</span><div><h3>Build your loaf</h3><p>Choose the bread, size, organic flour and optional extras.</p></div></li><li><span>02</span><div><h3>Pick a bake day</h3><p>Select an available delivery date at least two days ahead.</p></div></li><li><span>03</span><div><h3>We mix, ferment and bake</h3><p>Your loaf is cold-fermented and baked fresh for your order.</p></div></li><li><span>04</span><div><h3>Delivered locally</h3><p>We bring it to eligible Adelaide foothills suburbs.</p></div></li></ol>
+    </section>
+
+    <section id="delivery" class="delivery section-pad">
+      <div class="delivery-card"><p class="eyebrow">Local by design</p><h2>Foothills delivery loop</h2><p>Our sample delivery zone covers selected suburbs along the Adelaide foothills. Enter your suburb at checkout to confirm it is included.</p><div class="suburbs">Burnside · Beaumont · Hazelwood Park · Glen Osmond · Myrtle Bank · Fullarton · Highgate · St Georges · Auldana · Magill</div><p class="fine">Edit this list in <code>script.js</code> before publishing. Delivery fees and availability are examples.</p></div>
+      <div class="map-art" aria-hidden="true"><div class="map-line"></div><span class="pin p1"></span><span class="pin p2"></span><span class="pin p3"></span><span class="pin p4"></span><strong>ADL<br>FOOTHILLS</strong></div>
+    </section>
+
+    <section id="order" class="order section-pad">
+      <div class="order-intro"><p class="eyebrow">Bake list</p><h2>Build your loaf</h2><p>Choose your preferences and see the total update instantly. This static demo prepares an order email for the bakery.</p><div class="order-promise"><strong>Freshness promise</strong><p>Mixed for you, never pulled from a freezer or warehouse.</p></div></div>
+      <form id="orderForm" class="order-form">
+        <fieldset><legend>1. Your bread</legend><div class="option-grid three">
+          <label class="option"><input type="radio" name="bread" value="Country loaf" data-price="12" checked><span><b>Country loaf</b><small>From $12</small></span></label>
+          <label class="option"><input type="radio" name="bread" value="Heritage grain" data-price="14"><span><b>Heritage grain</b><small>From $14</small></span></label>
+          <label class="option"><input type="radio" name="bread" value="Sandwich tin" data-price="13"><span><b>Sandwich tin</b><small>From $13</small></span></label>
+        </div></fieldset>
+        <fieldset><legend>2. Size & flour</legend><div class="form-row"><label>Loaf size<select name="size" id="size"><option value="Small 650 g" data-add="0">Small · 650 g</option><option value="Large 950 g" data-add="4">Large · 950 g (+$4)</option></select></label><label>Organic flour<select name="flour"><option>White wheat</option><option>Whole wheat</option><option>Rye blend</option><option>Spelt blend</option></select></label></div></fieldset>
+        <fieldset><legend>3. Extras</legend><div class="option-grid three compact"><label class="option"><input type="checkbox" name="extras" value="Seed crust" data-price="2"><span><b>Seed crust</b><small>+$2</small></span></label><label class="option"><input type="checkbox" name="extras" value="Olives & rosemary" data-price="3"><span><b>Olives & rosemary</b><small>+$3</small></span></label><label class="option"><input type="checkbox" name="extras" value="Sliced" data-price="1"><span><b>Sliced</b><small>+$1</small></span></label></div></fieldset>
+        <fieldset><legend>4. Delivery & contact</legend><div class="form-row"><label>Delivery date<input type="date" name="date" id="deliveryDate" required></label><label>Suburb<select name="suburb" id="suburb" required><option value="">Choose suburb</option></select></label></div><div class="form-row"><label>Name<input name="name" autocomplete="name" required placeholder="Your name"></label><label>Email<input type="email" name="email" autocomplete="email" required placeholder="you@example.com"></label></div><label>Delivery address<input name="address" autocomplete="street-address" required placeholder="Street address"></label><label>Order notes<textarea name="notes" rows="3" placeholder="Gate code, allergy note, gift message…"></textarea></label></fieldset>
+        <div class="summary"><div><span>Estimated total</span><strong id="total">$18.00</strong><small>Includes sample $6 local delivery</small></div><button class="button" type="submit">Place order</button></div>
+        <p class="form-note">Demo checkout. No payment is taken. Update <code>BAKERY_EMAIL</code> in <code>script.js</code> so submissions open a pre-filled email to you.</p>
+      </form>
+    </section>
+  </main>
+  <footer><a class="brand" href="#top"><span class="brand-mark">F</span><span>Foothills Ferment</span></a><p>Organic sourdough, baked in the Adelaide foothills.</p><p>© <span id="year"></span> Foothills Ferment</p></footer>
+  <dialog id="successDialog"><button class="close-dialog" aria-label="Close">×</button><p class="eyebrow">Your loaf is ready to request</p><h2>One last step</h2><p>Your email app should open with the order details. Send that email to place the request. The bakery should reply to confirm availability and payment.</p><button class="button close-dialog">Done</button></dialog>
+</body></html>
